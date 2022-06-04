@@ -25,6 +25,6 @@ ol
     width: 100%;
     bottom: 0;
     text-align: center;
-    position: fixed;
+    position: sticky;
     background-color: white;
 }
