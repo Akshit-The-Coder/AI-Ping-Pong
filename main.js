@@ -39,7 +39,7 @@ function modelLoaded()
 
 
 function draw(){
- Image(video , 0 , 0 , 700 , 600 );
+ image(video , 0 , 0 , 700 , 600 );
 
  background(0); 
 
