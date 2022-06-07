@@ -16,6 +16,8 @@ var pcscore =0;
 var RightWristX = "";
 var RightWristY = "";
 var ScoreRightWrist = "";
+
+var game_status = "";
 //ball x and y and speedx speed y and radius
 var ball = {
     x:350/2,
@@ -54,7 +56,8 @@ function modelLoaded()
 
 function startGame()
 {
-
+game_status = "start";
+document.getElementById("status").innerHTML = "Game Is Loading";
 }
 
 function restart()
@@ -74,6 +77,8 @@ function draw(){
  fill("black");
  stroke("black");
  rect(0,0,20,700);
+
+ if(game_status == "start")
 
  if(ScoreRightWrist > 0.2)
  {
